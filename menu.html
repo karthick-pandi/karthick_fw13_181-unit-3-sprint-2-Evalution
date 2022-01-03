@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid black;
+            height:100px;
+            width: 100%;
+        }
+        #autocardlength{
+            margin-left: 80%;
+        }
+        #item{
+            display: grid;
+            grid-template-columns: repeat(3,25%);
+           /* // grid-gap: 5%; */
+        }
+        #inner{
+            border:1px solid black;
+            min-height: 20px;
+            min-width: 25%;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        #auto{
+            background-color: chartreuse;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button onclick="gotocard()">GO TO CARD</button>
+        <select>
+            <option>select</option>
+            <option>High to low</option>
+            <option>low to high</option>
+        </select>
+    <h1 id="autocardlength">Autocard</h1>
+    </div>
+    <div id="item"></div>
+</body>
+</html>
+<script src="menu.js">
+    
+</script>
